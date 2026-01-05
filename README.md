@@ -26,6 +26,63 @@ Le projet utilise un modèle **XGBoost** entraîné sur des données réelles du
 ![App Screenshot](immo10.png)
 ---
 
+
+
+
+
+
+##📁 Structure du projet
+ImmoPredictTN/
+│
+├── backend/
+│   ├── app/
+│   │   └── main.py               # API FastAPI (endpoints / et /predict)
+│   │
+│   ├── models/
+│   │   ├── xgb_model.pkl         # Modèle XGBoost entraîné
+│   │   ├── scaler.pkl            # StandardScaler
+│   │   └── X_clean.csv           # Features utilisées par le modèle
+│   │
+│   ├── Study/
+│   │   ├── JupyterCode/
+│   │   │   └── immobiliersPrédiction.ipynb  # Entraînement & analyse ML
+│   │   │
+│   │   └── Presentation/
+│   │       ├── ImmoPredictTN-ia.pptx
+│   │       └── ImmoPredictTN_Rapport.pdf
+│   │
+│   ├── requirements.txt          # Dépendances Python
+│   └── README.md                 # Documentation backend
+│
+├── frontend/
+│   ├── public/
+│   └── src/
+│       ├── assets/               # Images & ressources
+│       ├── components/           # Composants React
+│       ├── data/                 # Données statiques
+│       ├── hooks/                # Hooks personnalisés
+│       ├── lib/                  # Fonctions utilitaires
+│       └── main.tsx              # Point d’entrée React
+│
+└── README.md                     # Documentation principale
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 ## 🎯 Fonctionnalités principales
 
 - Prédiction de prix pour : appartements, maisons, bureaux, commerces, colocations, locations vacances  
