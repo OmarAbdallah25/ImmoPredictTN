@@ -10,7 +10,7 @@
 
 ImmoPredictTN est un projet **full-stack** combinant **React + TypeScript** pour le frontend et **FastAPI + Python** pour le backend.  
 Le projet utilise un modèle **XGBoost** entraîné sur des données réelles du marché tunisien afin d’estimer le prix des biens immobiliers de manière rapide et précise.
-
+![App Screenshot](immo1.jpg)
 ---
 
 ## 🎯 Fonctionnalités principales
