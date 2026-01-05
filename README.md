@@ -10,7 +10,20 @@
 
 ImmoPredictTN est un projet **full-stack** combinant **React + TypeScript** pour le frontend et **FastAPI + Python** pour le backend.  
 Le projet utilise un modèle **XGBoost** entraîné sur des données réelles du marché tunisien afin d’estimer le prix des biens immobiliers de manière rapide et précise.
-![App Screenshot](immo1.jpg)
+
+
+
+## 💻 Captures d’écran
+![App Screenshot](immo1.png)
+![App Screenshot](immo2.png)
+![App Screenshot](immo3.png)
+![App Screenshot](immo4.png)
+![App Screenshot](immo5.png)
+![App Screenshot](immo6.png)
+![App Screenshot](immo7.png)
+![App Screenshot](immo8.png)
+![App Screenshot](immo9.png)
+![App Screenshot](immo10.png)
 ---
 
 ## 🎯 Fonctionnalités principales
@@ -29,38 +42,105 @@ Le projet utilise un modèle **XGBoost** entraîné sur des données réelles du
 ---
 
 
-## 💻 Captures d’écran
-
-Page d’estimation
 
 
-Page résultat
 
 
 
 
 ## ⚙️ Installation
-Backend (FastAPI + Python)
-cd backend
+🔧 Prérequis
+
+Assure-toi d’avoir installé :
+
+Python ≥ 3.10
+
+Node.js ≥ 18
+
+npm ≥ 9
+
+Git
+
+Vérification :
+
+python --version
+node --version
+npm --version
+git --version
+
+
+
+🖥️ Installation Backend (FastAPI + Machine Learning)
+# Cloner le projet
+git clone https://github.com/USERNAME/ImmoPredictTN.git
+cd ImmoPredictTN/backend
+
+1️⃣ Créer un environnement virtuel
+
+Windows
+
 python -m venv venv
-# Windows
 venv\Scripts\activate
-# macOS / Linux
+
+
+macOS / Linux
+
+python3 -m venv venv
 source venv/bin/activate
 
+2️⃣ Installer les dépendances
+pip install --upgrade pip
 pip install -r requirements.txt
+
+3️⃣ Lancer l’API FastAPI
 uvicorn app.main:app --reload
 
 
-API disponible sur : http://localhost:8000
+📍 API disponible sur :
 
-Frontend (React + Vite + TypeScript)
-cd frontend
+http://localhost:8000
+
+Documentation Swagger : http://localhost:8000/docs
+
+✅ Test rapide :
+
+GET http://localhost:8000/
+
+🌐 Installation Frontend (React + Vite + TypeScript)
+cd ../frontend
 npm install
+
+Lancer l’application
 npm run dev
 
 
-Application disponible sur l’URL indiquée par Vite (ex: http://localhost:5173)
+📍 Application disponible sur l’URL affichée par Vite
+(exemple : http://localhost:5173
+)
+
+
+
+
+
+
+
+
+
+
+
+
+
+# DataSet
+
+https://www.kaggle.com/datasets/ghassen1302/property-prices-in-tunisia
+
+
+
+
+
+
+
+
 
 ## 🧠 Modèle Machine Learning
 
